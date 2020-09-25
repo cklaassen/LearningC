@@ -1,3 +1,4 @@
 C:/Users/klaas/Documents/Programming/LearningC/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/klaas/Documents/Programming/LearningC/cmake-build-debug/CMakeFiles/LearningC.dir
 C:/Users/klaas/Documents/Programming/LearningC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/klaas/Documents/Programming/LearningC/cmake-build-debug/CMakeFiles/test_lib.dir

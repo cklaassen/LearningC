@@ -127,6 +127,19 @@ LearningC\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LearningC.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LearningC.dir\build
 .PHONY : LearningC\fast
 
+#=============================================================================
+# Target rules for targets named test_lib
+
+# Build rule for target.
+test_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) test_lib
+.PHONY : test_lib
+
+# fast build rule for target.
+test_lib\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\build
+.PHONY : test_lib\fast
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -154,6 +167,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LearningC.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LearningC.dir\main.c.s
 .PHONY : main.c.s
 
+test.obj: test.c.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -163,9 +203,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LearningC
+	@echo ... test_lib
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

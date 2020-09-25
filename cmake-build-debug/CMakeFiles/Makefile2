@@ -58,6 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\klaas\Documents\Programming\LearningC\cmake-build-de
 
 # The main recursive "all" target.
 all: CMakeFiles\LearningC.dir\all
+all: CMakeFiles\test_lib.dir\all
 
 .PHONY : all
 
@@ -68,6 +69,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles\LearningC.dir\clean
+clean: CMakeFiles\test_lib.dir\clean
 
 .PHONY : clean
 
@@ -97,6 +99,33 @@ LearningC: CMakeFiles\LearningC.dir\rule
 CMakeFiles\LearningC.dir\clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LearningC.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\LearningC.dir\clean
 .PHONY : CMakeFiles\LearningC.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_lib.dir
+
+# All Build rule for target.
+CMakeFiles\test_lib.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target test_lib"
+.PHONY : CMakeFiles\test_lib.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\test_lib.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\test_lib.dir\rule
+
+# Convenience name for target.
+test_lib: CMakeFiles\test_lib.dir\rule
+
+.PHONY : test_lib
+
+# clean rule for target.
+CMakeFiles\test_lib.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\clean
+.PHONY : CMakeFiles\test_lib.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

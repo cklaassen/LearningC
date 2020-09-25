@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/klaas/Documents/Programming/LearningC/main.c
-stdio.h
--
-test.c
-C:/Users/klaas/Documents/Programming/LearningC/test.c
-
 C:/Users/klaas/Documents/Programming/LearningC/test.c
 stdio.h
 -
