@@ -128,6 +128,19 @@ LearningC\fast:
 .PHONY : LearningC\fast
 
 #=============================================================================
+# Target rules for targets named calculator
+
+# Build rule for target.
+calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) calculator
+.PHONY : calculator
+
+# fast build rule for target.
+calculator\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\build
+.PHONY : calculator\fast
+
+#=============================================================================
 # Target rules for targets named test_lib
 
 # Build rule for target.
@@ -139,6 +152,33 @@ test_lib: cmake_check_build_system
 test_lib\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\build
 .PHONY : test_lib\fast
+
+calculator.obj: calculator.c.obj
+
+.PHONY : calculator.obj
+
+# target to build an object file
+calculator.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\calculator.c.obj
+.PHONY : calculator.c.obj
+
+calculator.i: calculator.c.i
+
+.PHONY : calculator.i
+
+# target to preprocess a source file
+calculator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\calculator.c.i
+.PHONY : calculator.c.i
+
+calculator.s: calculator.c.s
+
+.PHONY : calculator.s
+
+# target to generate assembly for a file
+calculator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\calculator.c.s
+.PHONY : calculator.c.s
 
 main.obj: main.c.obj
 
@@ -203,7 +243,11 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... LearningC
+	@echo ... calculator
 	@echo ... test_lib
+	@echo ... calculator.obj
+	@echo ... calculator.i
+	@echo ... calculator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

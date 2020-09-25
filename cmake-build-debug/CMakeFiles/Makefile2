@@ -58,6 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\klaas\Documents\Programming\LearningC\cmake-build-de
 
 # The main recursive "all" target.
 all: CMakeFiles\LearningC.dir\all
+all: CMakeFiles\calculator.dir\all
 all: CMakeFiles\test_lib.dir\all
 
 .PHONY : all
@@ -69,6 +70,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles\LearningC.dir\clean
+clean: CMakeFiles\calculator.dir\clean
 clean: CMakeFiles\test_lib.dir\clean
 
 .PHONY : clean
@@ -101,13 +103,40 @@ CMakeFiles\LearningC.dir\clean:
 .PHONY : CMakeFiles\LearningC.dir\clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/calculator.dir
+
+# All Build rule for target.
+CMakeFiles\calculator.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target calculator"
+.PHONY : CMakeFiles\calculator.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\calculator.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\calculator.dir\rule
+
+# Convenience name for target.
+calculator: CMakeFiles\calculator.dir\rule
+
+.PHONY : calculator
+
+# clean rule for target.
+CMakeFiles\calculator.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\calculator.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\calculator.dir\clean
+.PHONY : CMakeFiles\calculator.dir\clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_lib.dir
 
 # All Build rule for target.
 CMakeFiles\test_lib.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_lib.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_lib.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target test_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\klaas\Documents\Programming\LearningC\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target test_lib"
 .PHONY : CMakeFiles\test_lib.dir\all
 
 # Build rule for subdir invocation for target.

@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/klaas/Documents/Programming/LearningC/calculator.c
+stdio.h
+-
+
 C:/Users/klaas/Documents/Programming/LearningC/main.c
 stdio.h
 -
 test.c
 C:/Users/klaas/Documents/Programming/LearningC/test.c
+calculator.c
+C:/Users/klaas/Documents/Programming/LearningC/calculator.c
 
 C:/Users/klaas/Documents/Programming/LearningC/test.c
 stdio.h

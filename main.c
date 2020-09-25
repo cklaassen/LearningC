@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "test.c"
+#include "calculator.c"
 
 int main() {
-    printf("Hello, World!\n");
-    test();
+    compute();
+//    test();
     return 0;
 }
